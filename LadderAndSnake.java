@@ -1,13 +1,18 @@
+import java.util.*;
+
 public class LadderAndSnake
 
 {
+     public static void main(String args[])
 
-public  static void main(String args[])
+  {
+      Random r=new Random();
 
-{
+     int random=r.nextInt(6);
 
-System.out.println("Count The Rolling Dice And Position of player");
-
+     System.out.println("Randomely generated dice "+random);
 }
 }
 
+
+   
