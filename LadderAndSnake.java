@@ -3,6 +3,7 @@ public class LadderAndSnake
 {
    private void play()
 {
+  int count=0;
   int position=0;
 
   while(position!=100)
@@ -20,6 +21,8 @@ public class LadderAndSnake
      if(diceCheck==0)
   {
         System.out.println("player is in same position");
+         count=count+1;
+      System.out.println("position of player is"+position);
 
   }
 
@@ -34,6 +37,8 @@ public class LadderAndSnake
 
       System.out.println("current position of player is:"+position);
 
+       count=count+1;
+
 }
        else if(diceCheck==2)
 {    
@@ -46,8 +51,9 @@ public class LadderAndSnake
  {  
           position=0;
         System.out.println("position statst initial point i.e zero");
-
+              
       }
+       count=count+1;
 }
 
       else 
@@ -60,8 +66,10 @@ public class LadderAndSnake
        {
              position=position-dice;
 
-
+           count=count+1;
      }
+      System.out.println("Number of dice rolling :"+count);
+
 }
 
 }
